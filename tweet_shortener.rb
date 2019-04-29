@@ -1,5 +1,7 @@
 require 'pry'
 
+#Improvements: (1)Don't hard-code capitalized substitutes...Tried using casecmp and downcase, perhaps incorrectly. Look into this. (2) Is there a way to do without using gsub?
+
 def dictionary  
   
   dictionary =  { 
