@@ -33,8 +33,7 @@ tweet_array.each_with_index do |str,ind|
 end
 
 def bulk_tweet_shortener(tweets_array)
-  tweets_array.each do |tweet_array|
-    tweet_array.join(" ")
+  tweets_array.each do |str_tweet|
     puts word_substituter(tweet_array)
   end
 end
