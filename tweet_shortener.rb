@@ -26,7 +26,7 @@ tweet_array = []
 tweet_array = str_tweet.split(" ")
 tweet_array.each_with_index do |str,ind|
   dictionary.each_key do |word|
-    tweet_array[ind].gsub!(word,dictionary[word]) if str.casecmp?(word) && word.length == str.length
+    tweet_array[ind].gsub!(word,dictionary[word]) if str.include?(word) && word.length == str.length
     end
   end
  return tweet_array.join(" ")
