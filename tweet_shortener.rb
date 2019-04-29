@@ -11,6 +11,7 @@ def dictionary
     "for, four" => '4',
     "four" => '4',
     "for" => '4',
+    "For" => '4',
     'be' => 'b',
     'you' => 'u',
     'at' => "@",
@@ -34,7 +35,7 @@ end
 
 def bulk_tweet_shortener(tweets_array)
   tweets_array.each do |str_tweet|
-    puts word_substituter(tweet_array)
+    puts word_substituter(str_tweet)
   end
 end
 
